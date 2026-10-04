@@ -1,0 +1,82 @@
+2026-10-04 03:39:18,954 - pipeline - DEBUG - only in the file
+2026-10-04 03:39:18,954 - pipeline - INFO - in the console and the file
+2026-10-04 03:39:18,962 - pipeline - INFO - Loading data
+2026-10-04 03:39:18,962 - pipeline - DEBUG - Loaded 7 raw rows; columns=['id', 'name', 'age', 'salary']
+2026-10-04 03:39:18,962 - pipeline - DEBUG - id=1 ok
+2026-10-04 03:39:18,962 - pipeline - ERROR - id=2 failed parsing, dropped
+Traceback (most recent call last):
+  File "/var/folders/kx/pd4sg77j7v5fxr5t26brhwqw0000gn/T/ipykernel_83666/4260667832.py", line 20, in clean
+    raise ValueError("missing age")
+ValueError: missing age
+2026-10-04 03:39:18,963 - pipeline - ERROR - id=3 failed parsing, dropped
+Traceback (most recent call last):
+  File "/var/folders/kx/pd4sg77j7v5fxr5t26brhwqw0000gn/T/ipykernel_83666/4260667832.py", line 22, in clean
+    row["salary"] = float(row["salary"])
+                    ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'not_a_number'
+2026-10-04 03:39:18,963 - pipeline - DEBUG - id=4 ok
+2026-10-04 03:39:18,963 - pipeline - WARNING - Duplicate id=4 dropped
+2026-10-04 03:39:18,967 - pipeline - ERROR - id=5 has implausible age=230, dropped
+2026-10-04 03:39:18,968 - pipeline - DEBUG - id=6 ok
+2026-10-04 03:39:18,968 - pipeline - INFO - Rows kept: 3 | average salary: 71000.00
+2026-10-04 03:39:18,969 - pipeline - INFO - Dropped 4 of 7 rows
+2026-10-04 03:39:18,994 - pipeline - INFO - Loading data
+2026-10-04 03:39:18,995 - pipeline - DEBUG - Loaded 7 raw rows; columns=['id', 'name', 'age', 'salary']
+2026-10-04 03:39:18,995 - pipeline - DEBUG - id=1 ok
+2026-10-04 03:39:18,995 - pipeline - ERROR - id=2 failed parsing, dropped
+Traceback (most recent call last):
+  File "/var/folders/kx/pd4sg77j7v5fxr5t26brhwqw0000gn/T/ipykernel_83666/4260667832.py", line 20, in clean
+    raise ValueError("missing age")
+ValueError: missing age
+2026-10-04 03:39:18,995 - pipeline - ERROR - id=3 failed parsing, dropped
+Traceback (most recent call last):
+  File "/var/folders/kx/pd4sg77j7v5fxr5t26brhwqw0000gn/T/ipykernel_83666/4260667832.py", line 22, in clean
+    row["salary"] = float(row["salary"])
+                    ^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'not_a_number'
+2026-10-04 03:39:18,995 - pipeline - DEBUG - id=4 ok
+2026-10-04 03:39:18,995 - pipeline - WARNING - Duplicate id=4 dropped
+2026-10-04 03:39:18,996 - pipeline - ERROR - id=5 has implausible age=230, dropped
+2026-10-04 03:39:18,996 - pipeline - DEBUG - id=6 ok
+2026-10-04 03:39:18,996 - pipeline - INFO - Rows kept: 3 | average salary: 71000.00
+2026-10-04 03:39:18,996 - pipeline - INFO - Dropped 4 of 7 rows
+2026-10-04 03:39:19,003 - pipeline - INFO - Loading data
+2026-10-04 03:39:19,003 - pipeline - WARNING - Input has a header but no data rows
+2026-10-04 03:39:19,004 - pipeline - CRITICAL - No valid rows left; cannot summarize
+2026-10-04 03:39:19,004 - pipeline - ERROR - Pipeline aborted
+Traceback (most recent call last):
+  File "/var/folders/kx/pd4sg77j7v5fxr5t26brhwqw0000gn/T/ipykernel_83666/688507755.py", line 7, in <module>
+    summarize(clean_rows)
+  File "/var/folders/kx/pd4sg77j7v5fxr5t26brhwqw0000gn/T/ipykernel_83666/4260667832.py", line 39, in summarize
+    raise RuntimeError("empty dataset")
+RuntimeError: empty dataset
+2026-10-04 03:39:19,016 - pipeline - DEBUG - filler message number 0
+2026-10-04 03:39:19,017 - pipeline - DEBUG - filler message number 1
+2026-10-04 03:39:19,017 - pipeline - DEBUG - filler message number 2
+2026-10-04 03:39:19,017 - pipeline - DEBUG - filler message number 3
+2026-10-04 03:39:19,017 - pipeline - DEBUG - filler message number 4
+2026-10-04 03:39:19,017 - pipeline - DEBUG - filler message number 5
+2026-10-04 03:39:19,017 - pipeline - DEBUG - filler message number 6
+2026-10-04 03:39:19,018 - pipeline - DEBUG - filler message number 7
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 8
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 9
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 10
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 11
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 12
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 13
+2026-10-04 03:39:19,019 - pipeline - DEBUG - filler message number 14
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 15
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 16
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 17
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 18
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 19
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 20
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 21
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 22
+2026-10-04 03:39:19,020 - pipeline - DEBUG - filler message number 23
+2026-10-04 03:39:19,021 - pipeline - DEBUG - filler message number 24
+2026-10-04 03:39:19,021 - pipeline - DEBUG - filler message number 25
+2026-10-04 03:39:19,021 - pipeline - DEBUG - filler message number 26
+2026-10-04 03:39:19,021 - pipeline - DEBUG - filler message number 27
+2026-10-04 03:39:19,021 - pipeline - DEBUG - filler message number 28
+2026-10-04 03:39:19,021 - pipeline - DEBUG - filler message number 29
